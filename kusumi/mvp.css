@@ -240,6 +240,12 @@ ul li {
     padding: 0.2rem 0;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 p {
     margin: 0.75rem 0;
     padding: 0;
@@ -534,4 +540,23 @@ blockquote footer {
 *::-webkit-scrollbar-thumb {
     background-color: var(--color-scrollbar);
     border-radius: 10px;
+}
+
+/* For header */
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image {
+    margin-right: 50px;
+}
+
+.text {
+    max-width: 70%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
