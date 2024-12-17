@@ -74,6 +74,7 @@ main {
     margin: 0 auto;
     max-width: var(--width-content);
     padding: 3rem 1rem;
+    text-align: justify;
 }
 
 hr {
@@ -88,6 +89,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: var(--justify-important);
+    text-align: justify;
 }
 
 section img,
