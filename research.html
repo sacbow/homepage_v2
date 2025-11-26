@@ -32,38 +32,26 @@
       <h2><em>Projects</em></h2>
 
       <ol class="list1" style="padding-left:16px;margin-left:16px">
-        <li>物理学の脳科学, 情報科学との出会い<br />
-          磁性体, 連想記憶モデル, マルコフ確率場モデル(MRF),脳と情報の統計力学</li>
-        <li>脳科学
-          <ol class="list2" style="padding-left:16px;margin-left:16px">
-            <li>神経回路網の数理</li>
-            <li>速いシナプス可塑性による脳内情報処理</li>
-            <li>視覚</li>
-            <li>情動</li>
-            <li>記憶</li>
-            <li>系列記憶と聴覚</li>
-          </ol>
-        </li>
-        <li>情報統計力学と機械学習
-          <ol class="list2" style="padding-left:16px;margin-left:16px">
-            <li>情報統計力学のおいたち　連想記憶モデルとMRF</li>
-            <li>機械学習</li>
-            <li>量子情報処理への統計力学的アプローチ</li>
-          </ol>
-        </li>
-        <li>地球惑星科学
-          <ol class="list2" style="padding-left:16px;margin-left:16px">
-            <li>惑星科学における反射スペクトル解析</li>
-            <li>MRF (Markov Random Field) モデルを用いた地球物理学・地質学データ解析</li>
-          </ol>
-        </li>
-        <li>物性物理学
-          <ol class="list2" style="padding-left:16px;margin-left:16px">
-            <li>X線光電子放出スペクトルのベイズ理論</li>
-            <li>走査型トンネル顕微鏡(STM)からの相互作用推定</li>
-            <li>量子スピン系</li>
-          </ol>
-        </li>
+        <li><a href="pdf/SP8project.pdf">SPring-8全ビームラインベイズ化計画</a>
+          <p></p>
+          <div class="box">
+			<img src="images/spring8.svg" width="400" height="314" style="float:right;margin-right:10px;margin-bottom:10px"><a href="pdf/bayesianmeasurement.pdf">ベイズ計測</a>を国内外に浸透させるには，我々が単に研究を進めるだけでなく，<a href="pdf/datadrivenscience.pdf">データ駆動科学</a>のロールモデルを世に提案することが重要である．そのためにも<a href="pdf/datadrivenscience.pdf">データ駆動科学</a>の水平展開が重要であり，大型放射光施設である<a href="http://www.spring8.or.jp/ja/" target="_blank" rel="noopener noreferrer">SPring-8</a>への展開を考えた．SPring-8はアメリカのAdvanced Photon Source (APS)，ヨーロッパのEuropean Synchrotron Radiatio Facility(ESRF)とならんで世界3大規模放射光施設の中の一つである．理研はSPring-8を「データ創出基盤」であると言っている．それは，まさにそのとおりであり，日々全国の研究者がデータを「創出」している．年間延べ1万人が利用しており，IoT(Internet of Things)で得られるデータとは「質」の異なるデータが日々得られている．特に自然科学系のデータが創出されているデータの宝庫であるSPring-8を利用しない手はない．自然科学系全般の研究者が SPring-8に来ているので，さまざまな分野に対して水平展開する意義は大きく，データ解析の概念の革新をはかれる．
+			<p></p>
+		</div></li>
+			
+        <li>複雑理工学専攻での<a href="pdf/datadrivenscience.pdf">データ駆動科学</a>の水平展開<p>
+        <div class="box">
+			   <img src="images/spectrum.svg" width="188" height="150" style="float:right;margin-right:10px;margin-bottom:10px">
+            <a href="pdf/datadrivenscience.pdf">データ駆動科学</a>の核融合グループとアストロバイオロジーグループへの水平展開を行なっている．まずその皮切りとして，分光学を取り上げた．分光学はスケールや対象を超えて広く使われており，マルチスケールを取り扱う複雑理工での<a href="pdf/datadrivenscience.pdf">データ駆動科学</a>の水平展開にうってつけの題材である．<p>
+			 
+			分光学で<a href="pdf/datadrivenscience.pdf">データ駆動科学</a>の水平展開が可能になるのは以下の理由による．我々は2012年に，図1のような多峰性スペクトルをガウス関数のような単峰性の基底関数の線形和に分解するスペクトル分解にベイズ推論を適用した．スペクトル分解では，基底関数の個数Kをいかに決めるかが重要な問題である．<img src="images/modelselection.svg" width="188" height="324" style="float:right;margin-right:10px;margin-bottom:10px">図2(a)のK=1のようにKが小さすぎると観測データを再現できない．図2(b), (c)のように，Kを大きくするとデータの再現性は良くなるが，Kを大きくしすぎると観測ノイズを再現するために余分な基底関数を用いてしまう．このようにKに関するトレードオフがあり，最適なKが存在することがわかる．この最適なKを選ぶことを統計学ではモデル選択とよぶ．<p>
+			スペクトル分解の誤差関数は局所解を持ち，従来手法の最急降下法では局所解を回避できない．また，最急降下法ではモデル選択の問題を取り扱うことはできない．そこで我々はこの問題にベイズ推論を適用した．我々はレプリカ交換モンテカルロ法を用いることにより，局所解の問題を解決することができる．また<a href="pdf/bayesianmeasurement.pdf">ベイズ計測</a>では確率モデルでデータ生成の過程をモデル化しているので，モデル選択の問題も取り扱うことができる．
+			<p>スペクトル分解の数理構造を考察すると，この枠組みは単にスペクトル分解だけに適用できる枠組みではなく，他の分光学の解析に用いることができることがわかる．<p></li>
+			
+		 <li>理論神経科学/計算論的神経科学/脳型人工知能<p>
+			視覚野を中心とし神経活動データを解析すると共に，その知見を用いて神経回路モデルを構築することで，脳神経系の情報処理原理を解明および，得られた知見を次世代脳型人工知能の設計原理つなげる．
+近年のAIブームのきっかけとなった深層畳み込みニューラルネットワーク(DCNN: Deep Convolutional Neural Network)の基本原理は, 1960年代初頭に得られた脳の視覚一次野(V1: Visual 1)に関するHubelとWieselの知見に基づいている．Hubel Wieselから60年，その間にえられた神経科学的な知見が，新たな人工知能の設計指針になりうる可能性があることを否定できる人はだれもいない．この骨太な方針のもと，DCNNと実際の脳の視覚野を比較した．その結果，脳の視覚野の最後にある<a href="https://www.todaishimbun.org/prof_okada_20201102/"target="_blank"rel="noopener noreferrer">側頭葉のニューロンの挙動</a>が，DCNNでは説明できないことがわかった．そこで我々は，<a href="https://staff.aist.go.jp/x-matsumoto/pcaresult.html"target="_blank"rel="noopener noreferrer">この知見</a>をもとに，新たな視覚野のモデルを構築した．さらに現在，このモデルが実際の側頭葉のニューロンの挙動を説明できるかを，電気生理学実験を用いて検証中である．
+		 <p></li>   
       </ol>
 
       <a class="anchor" id="publications"></a>
@@ -77,109 +65,68 @@
           style="font-size:22px;display:inline-block;line-height:130%;text-indent:0px"><strong>新領域創成科学研究科長賞受賞</strong></span>
         <br />
         <br />
-        修士課程(2004年7月1日着任以降 5名)<br />
+        修士課程(2004年7月1日着任以降 6名)<br />
         2008年3月　大泉 匡史<br />
         2010年3月　瀧山 健<br />
         2012年3月　関口 智樹<br />
         2013年3月　中西（大野）義典<br />
         2015年3月　竹中 光<br />
-        受賞率 5/10=50%
+		2023年3月　上田　朔<br>
+        <!--受賞率 5/10=50%-->
         <br />
         <br />
         博士課程(2004年7月1日着任以降3名)<br />
         2011年3月　大泉 匡史<br />
         2014年3月　瀧山 健<br />
         2016年3月　中西（大野）義典<br />
-        受賞率 3/9=33%
+        <!--受賞率 3/9=33%-->
         <br />
         <br />
         <span
-          style="font-size:22px;display:inline-block;line-height:130%;text-indent:0px"><strong>学会での受賞</strong></span>
+          style="font-size:22px;display:inline-block;line-height:130%;text-indent:0px"><strong>受賞</strong></span>
         <br />
         <br />
-        <a href="./karakida/" rel="nofollow">唐木田亮</a>
-        IBIS2015 学生最優秀プレゼンテーション賞</p>
-      <p><a href="./tokuda/" rel="nofollow">徳田悟</a>
-        ImPACT未来開拓研究会 ベストポスター賞</p>
-      <p><a href="./tokuda/" rel="nofollow">徳田悟</a>
-        2015年度物性若手夏の学校 分科会最優秀発表者 (分野A)</p>
-      <p><a href="./tokuda/" rel="nofollow">徳田悟</a>
-        2015年度人工知能学会 全国大会優秀賞 (口頭発表部門／インタラクティブ発表部門)</p>
-      <p><a href="./karakida/" rel="nofollow">唐木田亮</a>
-        2014年度IEEE CIS Japan Chapter Young Researcher Award</p>
-      <p><a href="./karakida/" rel="nofollow">唐木田亮</a>
-        日本神経回路学会大会奨励賞
-        日本神経回路学会第24回全国大会 (JNNS2014)</p>
-      <p><a href="./tokuda/" rel="nofollow">徳田悟</a>
-        2013年度IEEE CIS Japan Chapter Young Researcher Award</p>
-      <p><a href="./hterashima/" rel="nofollow">寺島裕貴</a>
-        人工知能学会全国大会学生奨励賞
-        第27回人工知能学会全国大会(JSAI2013)</p>
-      <p><a href="./%7Enagata/" rel="nofollow">永田賢二</a>
-        2011年度IEEE CIS Japan Chapter Young Researcher Award</p>
-      <p><a href="./%7Eotsubo/" rel="nofollow">大坪洋介</a>
-        2011年度IEEE CIS Japan Chapter Young Researcher Award</p>
-      <p>桑谷立
-        2011年度IEEE CIS Japan Chapter Young Researcher Award</p>
-      <p><a href="./hterashima/" rel="nofollow">寺島裕貴</a>
-        日本神経回路学会大会奨励賞
-        日本神経回路学会第21回全国大会 (JNNS2011)</p>
-      <p><a href="./%7Enagata/" rel="nofollow">永田賢二</a>
-        情報論的学習理論ワークショップ(IBIS2011)ポスター奨励賞</p>
-      <p>Ryota Hasegawa, <a href="./okada/" rel="nofollow">Masato Okada</a> and <a
-          href="http://www2.ipcku.kansai-u.ac.jp/~miyoshi/cnt/miyoshi.html" rel="nofollow">Seiji Miyoshi</a>
-        Journal of the Physical Society of Japan Papers of Editors' Choice (2011)
-        <br /></p>
-      <p><a href="./hterashima/" rel="nofollow">寺島裕貴</a>
-        人工知能学会全国大会優秀賞(口頭発表部門)
-        第25回人工知能学会全国大会 (JSAI2011)</p>
-      <p><a href="./%7Etakiyama/" rel="nofollow">瀧山健</a>
-        第五回Motor Control研究会優秀発表賞</p>
-      <p><a href="./%7Eiida/" rel="nofollow">飯田宗徳</a> <a
-          href="./%7Eomori/" rel="nofollow">大森敏明</a> <a
-          href="http://www.acs.dis.titech.ac.jp/index.html" rel="nofollow">青西亨</a> <a
-          href="./%7Eokada/" rel="nofollow">岡田真人</a>
-        情報処理学会　平成22年度 情報処理学会論文誌 数理モデル化と応用 優秀論文賞</p>
-      <p><a href="./hterashima/" rel="nofollow">寺島裕貴</a>
-        SNSS2011 Data Analysis Challenge Award
-        システム神経生物学スプリングスクール 2011 (SNSS2011)</p>
-      <p><a href="./hterashima/" rel="nofollow">寺島裕貴</a>
-        Organization for Computational Neuroscience Student Travel Award
-        19th Annual Computational Neuroscience Meeting (CNS*2010)</p>
-      <p><a href="./%7Eomori/" rel="nofollow">大森敏明</a> 計測自動制御学会 生体・生理工学部会 研究奨励賞</p>
-      <p><a href="./%7Eiida/" rel="nofollow">飯田宗徳</a> 情報処理学会　平成22年度山下記念研究賞</p>
-      <p><a href="./%7Eiida/" rel="nofollow">飯田宗徳</a> 情報処理学会　数理モデル化と問題解決研究会賞プレゼンテーション賞 2010</p>
-      <p><a href="./%7Eshimizu/" rel="nofollow">清水裕一郎</a> 情報処理学会　数理モデル化と問題解決研究会賞プレゼンテーション賞 2010
-      </p>
-      <p><a href="./%7Etakiyama/" rel="nofollow">瀧山健</a> 2009年度IEEE CIS Japan Chapter Young
-        Researcher Award</p>
-      <p><a href="./%7Etakiyama/" rel="nofollow">瀧山健</a> 日本神経回路学会2009年度全国大会　大会奨励賞
-        <br /></p>
-      <p><a href="./%7Eotsubo/" rel="nofollow">大坪洋介</a> 日本神経回路学会2009年度全国大会　大会奨励賞
-        <br /></p>
-      <p><span class="noexists">Kazuho Watanabe<a
-            href="./index.php?cmd=edit&amp;page=Kazuho%20Watanabe&amp;refer=%BC%F5%BE%DE">?</a></span>,
-        <span class="noexists">Shotaro Akaho<a
-            href="./index.php?cmd=edit&amp;page=Shotaro%20Akaho&amp;refer=%BC%F5%BE%DE">?</a></span>,
-        <span class="noexists">Shinichiro Omachi<a
-            href="./index.php?cmd=edit&amp;page=Shinichiro%20Omachi&amp;refer=%BC%F5%BE%DE">?</a></span>
-        and <a href="./okada/" rel="nofollow">Masato Okada</a>　The German Classification
-        Society - Method Award, 33rd Annual Conference of the GfKI, March 13th, 2009.</p>
-      <p><a href="./%7Eoizumi/" rel="nofollow">大泉匡史</a> 2008年度日本神経回路学会　研究賞
-        <br /></p>
-      <p><a href="./%7Eoizumi/" rel="nofollow">大泉匡史</a> 2007年度IEEE CIS Japan Chapter Young
-        Researcher Award
-        <br /></p>
-      <p><a href="http://www.stat.phys.titech.ac.jp/~sei/index_ja.html" rel="nofollow">鈴木正</a> 2007年度日本物理学会　若手奨励賞
-        <br /></p>
-      <p><a href="./%7Eoizumi/" rel="nofollow">大泉匡史</a> 2006年度日本神経回路学会　奨励賞
-        <br /></p>
-      <p><a href="./%7Emiura/" rel="nofollow">三浦佳二</a>
-        Neural Information Processing System Conference Outstanding Student Paper Awards (2005)
-        <br /></p>
-      <p><a href="./%7Emiura/" rel="nofollow">三浦佳二</a>　2005年度日本神経回路学会　研究賞
-        <br /></p>
-      <p><a href="http://www.stat.phys.titech.ac.jp/~sei/index_ja.html" rel="nofollow">鈴木正</a><br /></p>
+柏村周平　2025年春季大会 日本物理学会学生優秀発表賞<p>
+柏村周平　物性研究所スパコン共同利用・CCMS合同研究会「機械学習と計算物性科学の未来」ポスター賞<p>
+久住太一     2024年度日本顕微鏡学会若手シンポジウム, 優秀ポスター賞<p>
+	久住太一　 風戸研究奨励会国際会議発表渡航助成，2024年4月<p>
+	久住太一　 Microscopy and Microanalysis 2024 Student Scholar Award<p>
+	竝河伴裕　東京大学 数理・データサイエンスコンソーシアム　第６回データサイエンスコンテスト 最優秀賞 2023年9月<p>
+      唐木田亮　IBIS2015 学生最優秀プレゼンテーション賞<p>
+      徳田悟　ImPACT未来開拓研究会 ベストポスター賞<p>
+      徳田悟　2015年度物性若手夏の学校 分科会最優秀発表者 (分野A)<p>
+      徳田悟　2015年度人工知能学会 全国大会優秀賞 (口頭発表部門／インタラクティブ発表部門)<p>
+      唐木田亮　2014年度IEEE CIS Japan Chapter Young Researcher Award<p>
+      唐木田亮　日本神経回路学会大会奨励賞 日本神経回路学会第24回全国大会 (JNNS2014)<p>
+      徳田悟　2013年度IEEE CIS Japan Chapter Young Researcher Award<p>
+      寺島裕貴　人工知能学会全国大会学生奨励賞 第27回人工知能学会全国大会(JSAI2013)<p>
+      永田賢二　2011年度IEEE CIS Japan Chapter Young Researcher Award<p>
+      大坪洋介　2011年度IEEE CIS Japan Chapter Young Researcher Award<p>
+      桑谷立　2011年度IEEE CIS Japan Chapter Young Researcher Award<p>
+      寺島裕貴　日本神経回路学会大会奨励賞 日本神経回路学会第21回全国大会 (JNNS2011)<p>
+      永田賢二　情報論的学習理論ワークショップ(IBIS2011)ポスター奨励賞<p>
+      Ryota Hasegawa,Masato Okada and Seiji Miyoshi,<br>
+        Journal of the Physical Society of Japan Papers of Editors' Choice (2011)<p>
+      寺島裕貴　人工知能学会全国大会優秀賞(口頭発表部門)  第25回人工知能学会全国大会 (JSAI2011)<p>
+      瀧山健　第五回Motor Control研究会優秀発表賞<p>
+      飯田宗徳 大森敏明 青西亨 岡田真人 情報処理学会　平成22年度 情報処理学会論文誌 数理モデル化と応用 優秀論文賞<p>
+      寺島裕貴　SNSS2011 Data Analysis Challenge Award システム神経生物学スプリングスクール 2011 (SNSS2011)<p>
+      寺島裕貴　Organization for Computational Neuroscience Student Travel Award 19th Annual Computational Neuroscience Meeting (CNS*2010)<p>
+      大森敏明　計測自動制御学会 生体・生理工学部会 研究奨励賞<p>
+      飯田宗徳　情報処理学会　平成22年度山下記念研究賞<p>
+      飯田宗徳　情報処理学会　数理モデル化と問題解決研究会賞プレゼンテーション賞 2010<p>
+      清水裕一郎　情報処理学会　数理モデル化と問題解決研究会賞プレゼンテーション賞 2010<p>
+      瀧山健　2009年度IEEE CIS Japan Chapter Young Researcher Award<p>
+      瀧山健　日本神経回路学会2009年度全国大会　大会奨励賞<p>
+      大坪洋介　日本神経回路学会2009年度全国大会　大会奨励賞<p>
+      Kazuho Watanabe,Shotaro Akaho,Shinichiro Omachi and Masato Okada<br>
+	  The German Classification Society - Method Award, 33rd Annual Conference of the GfKI, March 13th, 2009.<p>
+      大泉匡史　2008年度日本神経回路学会　研究賞<p>
+      大泉匡史　2007年度IEEE CIS Japan Chapter Young Researcher Award<p>
+      鈴木正　2007年度日本物理学会　若手奨励賞<p>
+      大泉匡史　2006年度日本神経回路学会　奨励賞<p>
+      三浦佳二　Neural Information Processing System Conference Outstanding Student Paper Awards (2005)<p>
+      三浦佳二　2005年度日本神経回路学会　研究賞<p>
 
     </div>
   </section>
